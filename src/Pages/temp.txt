@@ -1,0 +1,95 @@
+  // Function to fetch places along the route
+  // const fetchPlacesAlongRoute = (routePath) => {
+  //   const placesService = new window.google.maps.places.PlacesService(map);
+  //   const radiusMeters = 1609.34 * 10; // 10 miles in meters
+
+  //   routePath.forEach((point) => {
+  //     const request = {
+  //       location: point,
+  //       radius: radiusMeters,
+  //       type: ['restaurant', 'gas_station', 'landmark'], // Specify the types of places you want
+  //     };
+
+  //     placesService.nearbySearch(request, (results, status) => {
+  //       if (status === 'OK') {
+  //         console.log('Places along the route:', results);
+  //       } else {
+  //         console.error('Places request failed:', status);
+  //       }
+  //     });
+  //   });
+  // };
+ 
+
+  // const createAlbanyRoute = async () => {
+  //   const directionServiceTest = new window.google.maps.DirectionsService();
+  //   const albanyRoute = {
+  //     origin: { lat: 40.7678, lng: -73.9654 },
+  //     destination: { lat: 42.6526, lng: -73.7562 },
+  //     travelMode: 'DRIVING',
+  //   };
+  //   const testResult = await directionServiceTest.route(albanyRoute);
+  //   setAlbanyTestRoute(testResult);
+  
+  //   // Calculate the marker interval (every 5th of the route)
+  //   const routePath = testResult.routes[0].overview_path;
+  //   const totalDistance = window.google.maps.geometry.spherical.computeLength(routePath);
+  //   const markerIntervalMeters = totalDistance / 5;
+  
+  //   let remainingDistance = markerIntervalMeters;
+  //   let markerCount = 0;
+  
+  //   for (let i = 0; i < routePath.length - 1; i++) {
+  //     const startPoint = routePath[i];
+  //     const endPoint = routePath[i + 1];
+  //     const segmentDistance = window.google.maps.geometry.spherical.computeDistanceBetween(startPoint, endPoint);
+  
+  //     if (segmentDistance < remainingDistance) {
+  //       remainingDistance -= segmentDistance;
+  //     } else {
+  //       // Calculate the position of the marker along the current segment
+  //       const fraction = remainingDistance / segmentDistance;
+  //       const markerPosition = new window.google.maps.LatLng(
+  //         startPoint.lat() + fraction * (endPoint.lat() - startPoint.lat()),
+  //         startPoint.lng() + fraction * (endPoint.lng() - startPoint.lng())
+  //       );
+  
+  //       // Place a marker at the markerPosition
+  //       new window.google.maps.Marker({
+  //         position: markerPosition,
+  //         map: map,
+  //         title: 'Marker',
+  //       });
+  //       const geoPoint = {lng:markerPosition.lng(), lat:markerPosition.lat()}
+  //       setTestWaypoints(prev => prev.concat(geoPoint))
+  
+  //       console.log(`Marker ${markerCount + 1} - Position: lat: ${markerPosition.lat()}, lng: ${markerPosition.lng()}`);
+  //       markerCount++;
+  
+  //       // Move to the next marker interval
+  //       remainingDistance = markerIntervalMeters - segmentDistance + remainingDistance;
+  //     }
+  //   }
+  // };
+ 
+  
+  // Calculate and display the route between origin and destination
+  // const calculateRoute = async () => {
+  //   if (originRef.current.value === '' || destinationRef.current.value === '') {
+  //     return;
+  //   }
+
+  //   const directionService = new window.google.maps.DirectionsService();
+  //   const results = await directionService.route({
+  //     origin: originRef.current.value,
+  //     destination: destinationRef.current.value,
+  //     travelMode: 'DRIVING',
+  //   });
+
+  //   setDirectionResponse(results);
+  //   setDistance(results.routes[0].legs[0].distance.text);
+  //   setDuration(results.routes[0].legs[0].duration.text);
+
+  //   // Call a function to fetch places within a radius along the route
+  //   fetchPlacesAlongRoute(results.routes[0].overview_path);
+  // };

@@ -1,0 +1,208 @@
+.user-login-screen{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 70vh;
+    text-align:left;
+}
+.user-login-screen div.side-display img{
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+.user-login-screen div.side-display{
+    /* display: flex; */
+    /* padding: 15vh 0px 10px 10px; */
+    padding-top: 20px;
+    height: 20%;
+    /* flex: 1; */
+}
+.user-login-screen div.side-display {
+    padding-right: 20px;
+}
+.user-login-screen div.side-display{
+    background-color: #25272871;
+
+}
+.user-login-screen div.side-display label{
+    font-size: 33px;
+    
+}
+.user-login-screen div.side-display h3{
+    margin: 10px 0px;
+}
+.user-login-screen div.side-display h2.password, div.side-display h2.email{
+    /* margin: 0; */
+    margin: 10px 0px;
+}
+.user-login-screen div.side-display form{
+    /* padding: 20px; */
+    margin-top: 5px;
+}
+.user-login-screen div.side-display form input{
+    width: calc(100% - 20px);
+    font-size: 20px;
+    padding: 5px ;
+}
+.user-login-screen div.side-display form span{
+    margin-top: 10px;
+    font-size: 20px;
+    display: block;
+}
+.user-login-screen div.side-display form button{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.user-login-screen div.main-display{
+    background-size: 100%;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmtucWRzb3l0ODFpaG9naHNicjNscDBxcmo2cHpuMnR0amdvNnc0aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cQbGMCkT1PZszSNw5F/giphy-downsized-large.gif'); */
+}
+.user-login-screen div.main-display img{
+    height:100%;
+    width: 100%;
+}
+
+.email {
+    padding-top: 10px;
+    font: 20px sans-serif;
+    color: white;
+}
+
+.password {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font: 20px sans-serif;
+    color: white;
+}
+
+.remainder {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font: 20px sans-serif;
+    color: white;
+    
+}
+
+.loginbutton {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    border: solid #fafafad9 5px;
+}
+
+.skip-button {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 300;
+    border: solid #fafafad9 5px;
+}
+
+.skip-button:hover {
+    /* border: 10px;
+    outline: var(--border) solid #000c;
+    background-size: 2 2; */
+    background: #f1f2f2;
+    color: #050801;
+    box-shadow: 0 0 5px #191919,
+                0 0 25px #434546,
+                0 0 50px #707374,
+                0 0 200px #f4f5f5;
+    -webkit-box-reflect:below 2px linear-gradient(transparent, #0005);
+    border-color: black;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.sign-up-button{
+    margin-top: 10px;
+    padding: 1px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    border: solid #fafafad9 5px;
+}
+
+.sign-up-button:hover
+{
+    background: #f1f2f2;
+    color: #050801;
+    box-shadow: 0 0 5px #191919,
+                0 0 25px #434546,
+                0 0 50px #707374,
+                0 0 200px #f4f5f5;
+    -webkit-box-reflect:below 2px linear-gradient(transparent, #0005);
+    border-color: black;
+}
+
+.main-display
+{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.here-button{
+    margin-left: 10px;
+    margin-top: 10px;
+    
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    border: solid #fafafad9 5px;
+    width: 150px;
+}
+
+.here-button:hover
+{
+    background: #f1f2f2;
+    color: #050801;
+    box-shadow: 0 0 5px #191919,
+                0 0 25px #434546,
+                0 0 50px #707374,
+                0 0 200px #f4f5f5;
+    -webkit-box-reflect:below 2px linear-gradient(transparent, #0005);
+    border-color: black;
+}
+
+
+.logo-size {
+    padding-right: 20px;
+}
+
+.side-display div.error{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: red;
+    margin-bottom: 10px;
+}
+

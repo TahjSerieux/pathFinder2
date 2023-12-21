@@ -1,0 +1,170 @@
+:root{
+    --error: #e7195a;
+}
+.user-signup-screen{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+    /* height: 100vh !important; */
+}
+
+.user-signup-screen div.side-display{
+    background-image: url("../Images/side-display.gif");
+    background-size: cover;
+    background-position: 10% 25%;
+    /* height: 100% !important; */
+}
+
+.user-signup-screen div.main-display{
+    display: flex;
+    text-align:center;
+    justify-content: center; 
+    align-items: center; 
+    background-image: url('../Images/sign-up-page-img2.jpg');
+    background-size: cover;
+    /* height: 100% !important; */
+}
+
+.creating {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.terms {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+.user-signup-screen div.main-display h3{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.user-signup-screen div.main-display form input[type='text'], .user-signup-screen div.main-display form input[type=password]{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.sign-up{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    padding: 2px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    border: solid #fafafad9 5px;
+    width: 300px;
+}
+
+.sign-up:hover
+{
+    background: #f1f2f2;
+    color: #050801;
+    box-shadow: 0 0 5px #191919,
+                0 0 25px #434546,
+                0 0 50px #707374,
+                0 0 200px #f4f5f5;
+    -webkit-box-reflect:below 2px linear-gradient(transparent, #0005);
+    border-color: black;
+}
+
+.go-back{
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    border: solid #fafafad9 5px;
+    width: 100px;
+}
+
+.go-back:hover
+{
+    background: #f1f2f2;
+    color: #050801;
+    box-shadow: 0 0 5px #191919,
+                0 0 25px #434546,
+                0 0 50px #707374,
+                0 0 200px #f4f5f5;
+    -webkit-box-reflect:below 2px linear-gradient(transparent, #0005);
+    border-color: black;
+}
+
+.p {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.p1 {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.user-signup-screen div.main-display form input[type="checkbox"]{
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+/* .user-signup-screen div.main-display h3{
+    font-size: 20px;
+    font-weight: 2000;
+    color: black;
+}
+
+.user-signup-screen div.main-display form{
+    margin-top: 10px;
+}
+.user-signup-screen div.main-display form input{
+    padding:5px;
+}
+.user-signup-screen div.main-display form input.error{
+    border: 1px solid var(--error);
+    font-size: 30px;
+}
+.user-signup-screen div.main-display form input[type='text'], .user-signup-screen div.main-display form input[type=password]{
+    width: 400px;
+    font-size: 20px;
+    font-weight: 2000;
+}
+.user-signup-screen div.main-display form input[type="checkbox"]{
+    margin-right: 10px;
+}
+.user-signup-screen div.main-display form button{
+    font-size: 20px;
+    font-weight: 2000;
+}
+.user-signup-screen div.main-display form label{
+    font-size: 30px;
+    font-weight: 2000;
+}
+.user-signup-screen div.main-display form a{
+    color:#0679ed;
+} */
+/* .user-signup-screen div.main-display form a{
+    color:aqua ;
+} */
+
+.user-signup-screen div.error{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: red;
+}
+
+/* .email, .password{
+    color: black;
+    font-weight: 500;
+} */

@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'; // Remove the extra space here
 import './App.css';
+import LoginPage from './Pages/LoginPage'
+import SignupPage from './Pages/SignupPage'
+import PathFinderMainPage from './Pages/PathFinderMainPage';
 
+import { useAuthContext } from './Hooks/useAuthContext';
 function App() {
+  const {user} = useAuthContext();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path = '/user/login' element={!user ? <LoginPage/> : <Navigate to= '/pathfinder'/>} />
+          <Route exact path = '/user/signup' element={!user ? <SignupPage/> : <Navigate to= '/pathfinder'/>} />
+          <Route exact path = '/' element={user? <PathFinderMainPage/>: <Navigate to= '/user/login'/>}/>
+          <Route exact path = '/pathfinder' element={<PathFinderMainPage/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
