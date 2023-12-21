@@ -1,0 +1,60 @@
+//Call Api
+Post http://localhost:8000/set-user
+content-type: application/json
+
+{
+    "Message": "Hello"
+}
+
+###
+Post http://localhost:8000/test-ml-call
+content-type: application/json
+
+{ 
+    "origin": { "lat": 40.7678, "lng": -73.9654 },
+    "destination": { "lat": 42.6526, "lng": -73.7562 },
+    "waypoints": [
+        {"lng":-74.15419850468653,"lat":41.09085861597583},
+        {"lng":-74.0723572429144,"lat":41.469893222145544},
+        {"lng":-74.05722666980795,"lat":41.88469355790664},
+        {"lng":-73.87319550737506,"lat":42.274991772799595},
+        {"lng":-73.75615,"lat":42.65263}]
+}
+
+###
+Post http://localhost:8000/user/login
+content-type: application/json
+
+{
+    "firstName":"Tahj",
+    "lastName":"Serieux",
+    "email":"ABCab1@gmail.com",
+    "password":"ABCabc123!@#"
+}
+
+###
+Post http://localhost:8000/user/signup
+content-type: application/json
+
+{
+    "firstName":"Tahj",
+    "lastName":"Serieux",
+    "email":"ABCab1@gmail.com",
+    "password":"ABCabc123!@#"
+}
+
+###
+Post http://localhost:8000/user/info/save-waypoint
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI3RkQyME1mdDh0NU9aWnpZYWdpOCIsImZpcnN0TmFtZSI6IlRhaGoiLCJpYXQiOjE3MDI5MTM4MjAsImV4cCI6MTcwMjk0OTgyMH0.5G9j_z3FG0dldbwTlRfBbPXHIHHf79JuEH5ZfQckt_8
+content-type: application/json
+
+{
+    "waypoint": "ChIJmUOhC0rOwokRCfyw8Ib0b5o"
+}
+ 
+###
+Post http://localhost:8000/user/info/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJoZXZOTkI0RU1SSzhxWEg1dFdPWCIsImZpcnN0TmFtZSI6IlRhaGoiLCJpYXQiOjE3MDI5MTYwNzUsImV4cCI6MTcwMjk1MjA3NX0.3-jO7HFYQsq-RAZS9nXu76wd71mdhROU0AZepFrXULs
+content-type: application/json
+
+ 

@@ -1,0 +1,179 @@
+body{
+    background-color: rgba(32,34,40,255);
+    padding: 20px;
+
+}
+.path-finder{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    border-color: 5px solid black;
+}
+
+.main-container, .destination-calculator{
+    height: auto;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+.main-container{
+    background-color: rgba(80, 145, 188, 0.924);
+    border-color: 10px solid black;
+}
+.destination-calculator{
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: content-box;
+    background: linear-gradient(50deg, #202020 37%, #4746469b 50%);
+}
+.destination-calculator-header-buttons{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+.destination-calculator-header-buttons *{
+    background: black;
+    border: solid #fafafad9 5px;
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: 500;
+    user-select: none;
+    border-color: 5px white;
+    transition: background-color 1.0s ease-in-out;
+    margin-left: 30px;
+    text-decoration: none;
+    width: 300px;
+    /* margin-left: 10px; */
+}
+.destination-calculator-header-buttons a{
+    color: white;
+}
+.destination-calculator-header-buttons *:hover{
+    cursor: pointer;
+    background: rgba(239, 2, 2, 0.522);
+    transform: scale(1.1);
+}
+
+.destination-calculator-header-buttons label.clicked{
+    background: rgb(218, 79, 79);
+    border: solid #f0f0f06a 5px;
+}
+
+.destination-picker{
+    display: flex;
+    flex-direction: column;
+    margin-top:10px;
+}
+.destination-calculator input[type='text']{
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.destination-calculator input:focus{
+    border-radius: 2px solid rgb(1, 1, 13);
+}
+.customize-trip{
+    margin-top: 30px;
+}
+.getting-current-location{
+    width: 100%;
+}
+
+label{
+    color:whitesmoke;
+    font-size: 20px;
+    border-color:5px #000000;
+}
+
+.timing {
+    margin-top: 30px;
+}
+
+
+.DestinationPicker{
+    margin-top: 20px;
+}
+
+.distination {
+    color:rgb(15, 15, 15);
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-color:5px #00000042;
+    margin-top: 30px;
+}
+
+.routes {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top: 20px;
+    width: 100%;
+    float: center;
+}
+
+.routebuttons {
+    width: 90%;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 40%;
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.716);
+    border: solid rgba(231, 219, 219, 0.416) 2px;
+    border-radius: 70px;
+    /* row-gap: 5px;
+    column-gap: 5px; */
+}
+
+.routebuttons:hover {
+    cursor: pointer;
+    background: rgba(239, 2, 2, 0.601);
+}
+
+.login-button {
+    padding: 10px 10px;
+    background: black;
+    border: solid #fafafad9 5px;
+    border-radius: 15px;
+    font-size: 20px;
+    user-select: none;
+    border-color: 5px white;
+    color: whitesmoke;
+    transition: background-color 1.0s ease-in-out;
+    font-weight: 2000;
+    width: 250px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.login-button:hover {
+    cursor: pointer;
+    background: rgb(218, 79, 79);
+    transform: scale(1.1);
+}
+
+
+.distination{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.display-generated-routes {
+    margin-top: 8px;
+    max-height: 295px; /* Set your desired maximum height */
+    overflow-y: auto; /* Enable vertical scrollbar when content overflows */
+}
+.destination-calculator-header-buttons a{
+   
+    color:whitesmoke;
+    text-decoration: none;
+}
